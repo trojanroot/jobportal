@@ -1,0 +1,92 @@
+:root{
+  --primary-color: rgb(33, 33, 237);
+  --text-color:#1e1e2f;
+  --text-light: #5d5d5d;
+  /* var(--primary-color) */
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-inline: 1rem;
+}
+header{
+  padding-block: 1rem;
+  box-shadow: 0 0 10px #ccc;
+  position:sticky;
+  top: 0;
+  background-color: white;
+  z-index: 99;
+}
+.headerItems{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.headerLogo{
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.headerItems img{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+header nav{
+  display: none;
+}
+header nav a{
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+}
+header nav :hover{
+  color: var(--primary-color);
+  text-decoration: underline;
+  font-weight: 600;
+}
+header .logo{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+header .headerActions{
+  display: flex;
+  gap: 1.5rem;
+}
+header .headerActions button{
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+header .headerActions .login{
+  color: var(--primary-color);
+  background-color: #fff;
+  border-color: var(--primary-color);
+  
+}
+header .headerActions .signin{
+  color: #fff;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+
+@media (min-width: 768px){
+  header nav{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+}

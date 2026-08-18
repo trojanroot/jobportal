@@ -1,0 +1,57 @@
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-inline: 1rem;
+}
+section{
+  padding: 2rem;
+}
+.mainItem img{
+    width: 100%;
+    height: 550px;
+}
+.mainContain{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    transition: translate(-50%,-50%);
+    text-align: center;
+}
+.mainContain h3 {
+  font-size: 40px;
+  color: var(--primary-color);
+}
+
+.mainContain p {
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.mainPVacancies .boxes{
+     padding: 2rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.mainPVacancies h3{
+    font-size: 40px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.mainPVacancies .box{
+    border-radius: 15px;
+    box-shadow: 0 3px 5px #c7c6c6;
+    transition: all ease 0.3s; 
+    padding: 24px;
+}
+
+.box h4{
+    color: var(--primary-color);
+    font-size: 20px;
+}
+.box p{
+    color: var(--text-color);
+    font-size: 16px;
+}
