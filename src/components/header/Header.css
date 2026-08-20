@@ -10,11 +10,6 @@
   box-sizing: border-box;
 }
 
-.container{
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-inline: 1rem;
-}
 header{
   padding-block: 1rem;
   box-shadow: 0 0 10px #ccc;
@@ -38,8 +33,8 @@ header{
 }
 
 .headerItems img{
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 50px;
   border-radius: 50%;
 }
 header nav{
@@ -75,7 +70,7 @@ header .headerActions .login{
   border-color: var(--primary-color);
   
 }
-header .headerActions .signin{
+header .headerActions .signup{
   color: #fff;
   background-color: var(--primary-color);
   border-color: var(--primary-color);

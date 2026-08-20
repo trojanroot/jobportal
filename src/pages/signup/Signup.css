@@ -1,0 +1,145 @@
+.signupPage {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #f5f7ff;
+  padding: 40px 20px;
+}
+
+.signupCard {
+  width: 100%;
+  max-width: 450px;
+
+  background: white;
+  padding: 35px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.signupCard h1 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.signupSubtitle {
+  text-align: center;
+  color: #777;
+  margin-bottom: 25px;
+}
+
+/* Role buttons */
+
+.roleSelection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.roleSelection button {
+  padding: 12px;
+
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+  background: white;
+  cursor: pointer;
+
+  font-weight: 600;
+}
+
+.roleSelection .activeRole {
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+/* Form */
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 18px;
+}
+
+.formGroup label {
+  font-weight: 600;
+}
+
+.formGroup input {
+  height: 45px;
+
+  padding: 0 12px;
+
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+  outline: none;
+
+  font-size: 15px;
+}
+
+.formGroup input:focus {
+  border-color: var(--primary-color);
+}
+
+/* Terms */
+
+.terms {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 14px;
+  color: #666;
+
+  margin-bottom: 20px;
+}
+
+.terms input {
+  width: 16px;
+  height: 16px;
+}
+
+/* Create account */
+
+.createAccount {
+  width: 100%;
+
+  height: 48px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: var(--primary-color);
+  color: white;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.createAccount:hover {
+  background: var(--primary-color);
+}
+
+/* Login */
+
+.loginText {
+  text-align: center;
+  margin-top: 20px;
+
+  color: #777;
+}
+
+.loginText span {
+  color: var(--primary-color);
+  font-weight: 600;
+  cursor: pointer;
+}

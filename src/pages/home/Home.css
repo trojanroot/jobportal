@@ -27,20 +27,20 @@ section{
   color: var(--text-color);
 }
 
-.mainPVacancies .boxes{
+.Mvacancies .boxes{
      padding: 2rem;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
-.mainPVacancies h3{
+.Mvacancies h3{
     font-size: 40px;
     text-align: center;
     color: var(--primary-color);
 }
 
-.mainPVacancies .box{
+.Mvacancies .box{
     border-radius: 15px;
     box-shadow: 0 3px 5px #c7c6c6;
     transition: all ease 0.3s; 
@@ -54,4 +54,129 @@ section{
 .box p{
     color: var(--text-color);
     font-size: 16px;
+}
+
+.featureJobs h3{
+    font-size: 40px;
+    text-align: center;
+    color: var(--primary-color);
+}
+.featureJobs p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.featureJobs{
+ padding: 15px;
+}
+
+.cardHeading  .two{
+    color: rgb(89, 9, 89);
+    border-radius: 5px;
+    padding: 2px ;
+    background-color:rgb(245, 117, 245);
+}
+.cardHeading  .one{
+    color:rgb(15, 94, 15);
+    border-radius: 5px;
+    padding: 2px ;
+    background-color:rgb(158, 241, 158) ;
+}
+
+.featureCards{
+    display: flex;
+    justify-content: space-between;
+}
+.featureCards .card{
+  border-radius: 15px;
+  box-shadow: 0 3px 5px #c7c6c6;
+  transition: all ease 0.3s; 
+}
+.featureCards .card:hover{
+  box-shadow: 0 3px 10px #c7c6c6;
+}
+.card{
+    padding:50px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cardName{
+    display: flex;
+    gap: 0.2rem;
+}
+.cardName img{
+    width: 20px;
+    height: 20px;
+}
+.search img{
+    width: 20px;
+    height: 20px;
+}
+.search{
+    color: gray;
+    display: flex;
+    gap: 0.5rem;
+}
+.location{
+    color: gray;
+    display: flex;
+    gap: 0.5rem;
+}
+.action button{
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.mainSearch{
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 48px;
+    padding: 4px 6px;
+    gap: 7rem;
+    border-radius: 25px;
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    top: 50px;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transition: translate(-50%,-50%);
+    text-align: center;
+}
+.location img{
+    width: 20px;
+    height: 20px;
+}
+.cardHeading h4{
+    color: var(--primary-color);
+    font-size: 24px;
+}
+.cardHeading p{
+    font-size: 16px;
+}
+
+.cardAction {
+    display: flex;
+    gap: 1rem;
+}
+.cardAction button{
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.cardAction  .viewDetails{
+    color: var(--primary-color);
+    background-color: #fff;
+    border-color: var(--primary-color);
+}
+.cardAction  .applynow{
+    background-color: var(--primary-color);
+    color: #fff;
 }

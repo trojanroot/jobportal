@@ -2,3 +2,8 @@
     --primary-color: rgb(33, 33, 237);
     --text-color:rgb(16, 8, 8);
 }
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-inline: 1rem;
+}

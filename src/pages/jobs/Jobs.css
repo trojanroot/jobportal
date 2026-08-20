@@ -1,0 +1,22 @@
+.cardItems{
+    display: grid;
+    grid-template-columns:() ;
+    /* grid-template-columns: auto; */
+}
+.cardItems .cards{
+  border-radius: 15px;
+  box-shadow: 0 3px 5px #c7c6c6;
+  transition: all ease 0.3s; 
+}
+.cards{
+    padding:50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cardItems{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 6rem;
+
+}

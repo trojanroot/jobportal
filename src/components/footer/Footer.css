@@ -1,0 +1,101 @@
+.footerContain{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+.footer{
+    background-color: rgb(199, 235, 249);
+    padding: 20px;
+}
+.footerquickLinks{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0.5rem;
+}
+
+.footerHeading img{
+  height: 50px;
+  width: 50px;
+}
+.footerHeading .fHead{
+    display: flex;
+}
+.footerHeading h2{
+    color: var(--primary-color);
+    font-size: 38px;
+}
+.footerquickLinks h2{
+    color: var(--primary-color);
+}
+.footerquickLinks a{
+    color: black;
+    text-decoration: none;
+}
+.footerquickLinks a:hover{
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+.candidate a{
+    color: black;
+    text-decoration: none;
+}
+.candidate a:hover{
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+.employes a{
+    color: black;
+    text-decoration: none;
+}
+.employes a:hover{
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+.support a{
+    color: black;
+    text-decoration: none;
+}
+.support a:hover{
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+.candidate{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0.5rem;
+}
+
+
+.candidate h2{
+    color: var(--primary-color);
+}
+.employes{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0.5rem;
+}
+.employes h2{
+    color: var(--primary-color);
+}
+.support{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0.5rem;
+}
+.support h2{
+    color: var(--primary-color);
+}
+.socialMedia img{
+    width: 30px;
+    height: 30px;
+}
+.socialMedia {
+    display: flex;
+    gap: 0.5rem;
+}
+.footerend{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
