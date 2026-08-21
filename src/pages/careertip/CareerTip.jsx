@@ -1,9 +1,11 @@
 import React from 'react'
+import "./CareerTip.css";
 
-function CareerTIp() {
+
+function CareerTip() {
   return (
-    <div>CareerTIp</div>
+    <></>
   )
 }
 
-export default CareerTIp
+export default CareerTip

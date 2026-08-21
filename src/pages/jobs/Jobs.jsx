@@ -11,27 +11,6 @@ function Jobs() {
     <>
       <section id="job">
         <div className="container">
-          {/* <div className="jobHeading">
-            <h2>Job Search</h2>
-            <p>Search for your desired job matching your skills</p>
-          </div>
-          <div className="Search">
-            <div className="jobsearch">
-              <img src={search} alt="search" />
-              <p>Job tittle, Keyword...</p>
-            </div>
-            <div className="joblocation">
-              <img src={location} alt="Location" />
-              <p>Location</p>
-            </div>
-            <div className="JobAction">
-              <button>Find Job</button>
-            </div>
-          </div>
-          <div className="allJob">
-            <h3>All Jobs</h3>
-            <p>Popular</p>
-          </div> */}
           <div className="cardItems">
             <div className="cards">
               <div className="cardHeading">
@@ -71,7 +50,79 @@ function Jobs() {
             </div>
             <div className="cards">
               <div className="cardHeading">
-                <h4>Technical Support Specialist</h4>
+                <h4>Junior Graphic Designer</h4>
+                <p>
+                  <span className="one">Part-time </span>
+                  Salary: $50,000 - $70,000
+                </p>
+              </div>
+              <div className="cardName">
+                <img src={google} alt="google" />
+                <p>Google Inc.</p>
+                <p>Kathmandu,Nepal</p>
+              </div>
+              <div className="cardAction">
+                <button className="viewDetails">View Details</button>
+                <button className="applynow">Apply Now</button>
+              </div>
+            </div>
+            <div className="cards">
+              <div className="cardHeading">
+                <h4>Visual Designer</h4>
+                <p>
+                  <span className="two">Full-time </span>
+                  Salary: $35,000 - $40,000
+                </p>
+              </div>
+              <div className="cardName">
+                <img src={apple} alt="google" />
+                <p>Apple</p>
+                <p>Boston, USA</p>
+              </div>
+              <div className="cardAction">
+                <button className="viewDetails">View Details</button>
+                <button className="applynow">Apply Now</button>
+              </div>
+            </div>
+            <div className="cards">
+              <div className="cardHeading">
+                <h4>Marketing Officer</h4>
+                <p>
+                  <span className="two">Full-time </span>
+                  Salary: NRS 30,000 - NRS 35,000
+                </p>
+              </div>
+              <div className="cardName">
+                <img src={google} alt="google" />
+                <p>Google Inc.</p>
+                <p>Kathmandu,Nepal</p>
+              </div>
+              <div className="cardAction">
+                <button className="viewDetails">View Details</button>
+                <button className="applynow">Apply Now</button>
+              </div>
+            </div>
+            <div className="cards">
+              <div className="cardHeading">
+                <h4>Interaction Designer</h4>
+                <p>
+                  <span className="two">Full-time </span>
+                  Salary: NRP30,000 - NRP40,000
+                </p>
+              </div>
+              <div className="cardName">
+                <img src={apple} alt="google" />
+                <p>Apple</p>
+                <p>Boston, USA</p>
+              </div>
+              <div className="cardAction">
+                <button className="viewDetails">View Details</button>
+                <button className="applynow">Apply Now</button>
+              </div>
+            </div>
+            <div className="cards">
+              <div className="cardHeading">
+                <h4>Front End Developer</h4>
                 <p>
                   <span className="one">Part-time </span>
                   Salary: NRS 20,000 - NRS 25,000
@@ -89,7 +140,7 @@ function Jobs() {
             </div>
             <div className="cards">
               <div className="cardHeading">
-                <h4>Senior UI/UX Designer</h4>
+                <h4>Software Engineer</h4>
                 <p>
                   <span className="two">Full-time </span>
                   Salary: $30,000 - $55,000
@@ -107,7 +158,7 @@ function Jobs() {
             </div>
             <div className="cards">
               <div className="cardHeading">
-                <h4>Technical Support Specialist</h4>
+                <h4>Product Designer</h4>
                 <p>
                   <span className="one">Part-time </span>
                   Salary: NRS 20,000 - NRS 25,000
@@ -125,79 +176,7 @@ function Jobs() {
             </div>
             <div className="cards">
               <div className="cardHeading">
-                <h4>Senior UI/UX Designer</h4>
-                <p>
-                  <span className="two">Full-time </span>
-                  Salary: $30,000 - $55,000
-                </p>
-              </div>
-              <div className="cardName">
-                <img src={apple} alt="google" />
-                <p>Apple</p>
-                <p>Boston, USA</p>
-              </div>
-              <div className="cardAction">
-                <button className="viewDetails">View Details</button>
-                <button className="applynow">Apply Now</button>
-              </div>
-            </div>
-            <div className="cards">
-              <div className="cardHeading">
-                <h4>Technical Support Specialist</h4>
-                <p>
-                  <span className="one">Part-time </span>
-                  Salary: NRS 20,000 - NRS 25,000
-                </p>
-              </div>
-              <div className="cardName">
-                <img src={google} alt="google" />
-                <p>Google Inc.</p>
-                <p>Kathmandu,Nepal</p>
-              </div>
-              <div className="cardAction">
-                <button className="viewDetails">View Details</button>
-                <button className="applynow">Apply Now</button>
-              </div>
-            </div>
-            <div className="cards">
-              <div className="cardHeading">
-                <h4>Senior UI/UX Designer</h4>
-                <p>
-                  <span className="two">Full-time </span>
-                  Salary: $30,000 - $55,000
-                </p>
-              </div>
-              <div className="cardName">
-                <img src={apple} alt="google" />
-                <p>Apple</p>
-                <p>Boston, USA</p>
-              </div>
-              <div className="cardAction">
-                <button className="viewDetails">View Details</button>
-                <button className="applynow">Apply Now</button>
-              </div>
-            </div>
-            <div className="cards">
-              <div className="cardHeading">
-                <h4>Technical Support Specialist</h4>
-                <p>
-                  <span className="one">Part-time </span>
-                  Salary: NRS 20,000 - NRS 25,000
-                </p>
-              </div>
-              <div className="cardName">
-                <img src={google} alt="google" />
-                <p>Google Inc.</p>
-                <p>Kathmandu,Nepal</p>
-              </div>
-              <div className="cardAction">
-                <button className="viewDetails">View Details</button>
-                <button className="applynow">Apply Now</button>
-              </div>
-            </div>
-            <div className="cards">
-              <div className="cardHeading">
-                <h4>Senior UI/UX Designer</h4>
+                <h4>Networking Engineer</h4>
                 <p>
                   <span className="two">Full-time </span>
                   Salary: $30,000 - $55,000

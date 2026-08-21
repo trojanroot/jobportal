@@ -63,6 +63,10 @@ header .headerActions button{
   padding: 8px 14px;
   border-radius: 10px;
   font-weight: 600;
+  cursor: pointer;
+}
+header .headerActions button:hover{
+  
 }
 header .headerActions .login{
   color: var(--primary-color);
