@@ -4,7 +4,7 @@ import "./Header.css";
 import logo from "../../assets/logo/logo.png";
 
 function Header() {
-  const navigate = useNavigate();
+  const navigate = useNavigate(); 
   return (
     <>
       <header>
