@@ -12,8 +12,14 @@ function Login() {
 
     if (email === "aryanthapa@gmail.com" && password === "123456") {
       setMessage("Login Successfully");
+    } else if (email === "aryanthapa@gmail.com" && password !== "123456") {
+      setMessage("Incorrect Password");
+    } else if (email !== "aryanthapa@gmail.com" && password === "123456") {
+      setMessage("Incorrect Email Address");
+    } else if (email !== "aryanthapa@gmail.com" && password !== "123456") {
+      setMessage("Incorrect Email Address");
     } else {
-      setMessage("Enter correct email and password");
+      setMessage("Email not registered");
     }
   };
   return (

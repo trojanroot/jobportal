@@ -4,20 +4,15 @@ import "./Signup.css";
 
 function Signup() {
   const navigate = useNavigate();
-
   const [role, setRole] = useState("jobseeker");
-
   return (
     <div className="signupPage">
-
       <div className="signupCard">
-
         <h1>Create Account</h1>
         <p className="signupSubtitle">
           Join us and find your next opportunity
         </p>
-
-        <div className="roleSelection">
+        {/* <div className="roleSelection">
 
           <button
             className={role === "jobseeker" ? "activeRole" : ""}
@@ -33,10 +28,8 @@ function Signup() {
             Employer
           </button>
 
-        </div>
-
+        </div> */}
         <form>
-
           <div className="formGroup">
             <label>Full Name</label>
             <input
@@ -44,7 +37,6 @@ function Signup() {
               placeholder="Enter your full name"
             />
           </div>
-
           <div className="formGroup">
             <label>Email</label>
             <input
@@ -52,7 +44,6 @@ function Signup() {
               placeholder="Enter your email"
             />
           </div>
-
           <div className="formGroup">
             <label>Password</label>
             <input
@@ -79,18 +70,14 @@ function Signup() {
           <button className="createAccount">
             Create Account
           </button>
-
         </form>
-
         <p className="loginText">
           Already have an account?{" "}
           <span onClick={() => navigate("/login")}>
             Login
           </span>
         </p>
-
       </div>
-
     </div>
   );
 }
