@@ -6,20 +6,19 @@ function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
+  const [status, setStatus] = useState("");
 
   const handleLogin = (e) => {
     e.preventDefault();
+    const registerEmail = localStorage.getItem("userEmail");
+    const registerPassowrd = localStorage.getItem("userPassword");
 
-    if (email === "aryanthapa@gmail.com" && password === "123456") {
-      setMessage("Login Successfully");
-    } else if (email === "aryanthapa@gmail.com" && password !== "123456") {
+    if (email === registerEmail && password === registerPassowrd) {
+      setMessage("Login Successful");
+    } else if (email === registerEmail && password !== registerPassowrd) {
       setMessage("Incorrect Password");
-    } else if (email !== "aryanthapa@gmail.com" && password === "123456") {
-      setMessage("Incorrect Email Address");
-    } else if (email !== "aryanthapa@gmail.com" && password !== "123456") {
-      setMessage("Incorrect Email Address");
     } else {
-      setMessage("Email not registered");
+      setMessage("Email Not Registered");
     }
   };
   return (
@@ -113,7 +112,7 @@ function Login() {
             <p>Don't have an account?</p>
             <span onClick={() => navigate("/signup")}>Sign up</span>
           </div>
-          {message && <div className="loginMessage">{message}</div>}
+          {message && <div className={"loginMessage"}>{message}</div>}
         </div>
       </div>
     </>
