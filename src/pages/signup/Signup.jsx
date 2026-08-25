@@ -20,7 +20,6 @@ function Signup() {
     const registerEmail = localStorage.getItem("userEmail");
     if (email === registerEmail) {
       setMessage("Email already Register");
-
       retun;
     }
     localStorage.setItem("userName", name);
