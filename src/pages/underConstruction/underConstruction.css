@@ -1,0 +1,36 @@
+.construction{
+    min-height: 70vh;
+
+    display: flex;
+    align-items: center;
+    padding: 30px 20px;
+}
+.containerHeading{
+    flex: 1;
+}
+.containerHeading h1{
+    color: var(--primary-color);
+    font-size: 45px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+
+}
+
+.containerHeading p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.containerHeading button{
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 14px;
+    font-size: 18px;
+}
+h3{
+    color: var(--primary-color);
+
+}

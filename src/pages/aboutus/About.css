@@ -16,27 +16,11 @@
   align-items: center;
   padding: 60px 70px;
   border-radius: 20px;
-  /* background: linear-gradient(
-    135deg,
-    #eaf3ff 0%,
-    #dbeafe 50%,
-    #eff6ff 100%
-  ); */
-    background-color: rgb(199, 235, 249);
+  background-color: rgb(199, 235, 249);
   position: relative;
   overflow: hidden;
 }
 
-/* .aboutHero::after {
-  content: "";
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  right: -100px;
-  top: -100px;
-  background-color: rgba(37, 99, 235, 0.1);
-  border-radius: 50%;
-} */
 
 .aboutHeroText {
   width: 60%;
@@ -110,7 +94,7 @@
   padding: 70px 0;
 }
 
-.services > h2 {
+.services  h2 {
   text-align: center;
   font-size: 34px;
   color: var(--primary-color);
@@ -162,7 +146,7 @@
   padding: 80px 0;
 }
 
-.whyUs > h2 {
+.whyUs h2 {
   text-align: center;
   font-size: 34px;
   color: var(--primary-color);
@@ -175,7 +159,7 @@
   gap: 25px;
 }
 
-.whyCards > div {
+.whyCards div {
   padding: 30px;
   background-color: white;
   border-radius: 14px;
@@ -184,7 +168,7 @@
   transition: 0.3s;
 }
 
-.whyCards > div:hover {
+.whyCards div:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
@@ -218,11 +202,11 @@
   text-align: center;
 }
 
-.stats > div {
+.stats  div {
   border-right: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-.stats > div:last-child {
+.stats  div:last-child {
   border-right: none;
 }
 
@@ -294,7 +278,7 @@
     gap: 30px;
   }
 
-  .stats > div {
+  .stats div {
     border-right: none;
   }
 }
