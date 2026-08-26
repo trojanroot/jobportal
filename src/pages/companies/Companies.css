@@ -1,0 +1,26 @@
+.companiesHeading{
+    text-align: center;
+    padding: 50px;
+}
+.companiesHeading h2{
+        color: var(--primary-color);
+        font-size: 40px;
+}
+
+.coCards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.companiesCard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    text-align: center;
+    transition: 0.3s;
+}
