@@ -10,6 +10,13 @@ function Login() {
 
   const handleLogin = (e) => {
     e.preventDefault();
+     const user={
+      name:"User name",
+      email:email,
+    };
+    localStorage.setItem("user",JSON.stringify(user));
+    navigate("/")
+
     const registerEmail = localStorage.getItem("userEmail");
     const registerPassowrd = localStorage.getItem("userPassword");
 

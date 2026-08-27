@@ -9,7 +9,16 @@ import search from "../../assets/homeimage/search.png";
 import location from "../../assets/homeimage/location.png";
 
 function Home() {
-  const nav = useNavigate();
+  const navigate = useNavigate();
+
+const handleApply=()=>{
+  const user =localStorage.getItem("user");
+  if(!user){
+    navigate("/login");
+    return;
+  }
+  navigate("/apply");
+}
   return (
     <>
       <section id="main">
@@ -94,7 +103,7 @@ function Home() {
               </div>
               <div className="cardAction">
                 <button className="viewDetails">View Details</button>
-                <button className="applynow">Apply Now</button>
+                <button className="applynow" onClick={handleApply}>Apply Now</button>
               </div>
             </div>
             <div className="card">
@@ -112,7 +121,7 @@ function Home() {
               </div>
               <div className="cardAction">
                 <button className="viewDetails">View Details</button>
-                <button className="applynow">Apply Now</button>
+                <button className="applynow" onClick={handleApply}>Apply Now</button>
               </div>
             </div>
             <div className="card">
@@ -129,8 +138,8 @@ function Home() {
                 <p>Pokhara,Nepal</p>
               </div>
               <div className="cardAction">
-                <button className="viewDetails">View Details</button>
-                <button className="applynow">Apply Now</button>
+                <button className="viewDetails" >View Details</button>
+                <button className="applynow" onClick={handleApply}>Apply Now</button>
               </div>
             </div>
           </div>

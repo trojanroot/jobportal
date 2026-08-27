@@ -59,13 +59,19 @@ header .headerActions{
   display: flex;
   gap: 1.5rem;
 }
-header .headerActions button{
+
+
+header .headerActions span{
+  cursor: pointer;
+}
+/* header .headerActions button{
   padding: 8px 14px;
   border-radius: 10px;
   font-weight: 600;
   cursor: pointer;
-}
-header .headerActions .login{
+} */
+
+/* header .headerActions .login{
   color: var(--primary-color);
   background-color: #fff;
   border-color: var(--primary-color);
@@ -75,7 +81,7 @@ header .headerActions .signup{
   color: #fff;
   background-color: var(--primary-color);
   border-color: var(--primary-color);
-}
+} */
 
 
 @media (min-width: 768px){

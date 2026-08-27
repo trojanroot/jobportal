@@ -13,6 +13,14 @@ function Signup() {
 
   const handelSignup = (e) => {
     e.PreventDefault;
+
+    const user={
+      name:name,
+      email:email,
+    };
+    localStorage.setItem("user",JSON.stringify(user));
+    navigate("/")
+
     if (password !== confirmPassword) {
       setMessage("Password not match");
       retun;
@@ -28,6 +36,9 @@ function Signup() {
     setMessage("account successfully created");
     navigate("/login");
   };
+
+
+
 
   return (
     <div className="signupPage">
