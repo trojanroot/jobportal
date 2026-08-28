@@ -12,23 +12,23 @@ function Signup() {
   const [confirmPassword, setConfirmPassword] = useState("");
 
   const handelSignup = (e) => {
-    e.PreventDefault;
+    e.PreventDefault();
 
-    const user={
-      name:name,
-      email:email,
+    const user = {
+      name: name,
+      email: email,
     };
-    localStorage.setItem("user",JSON.stringify(user));
-    navigate("/")
+    localStorage.setItem("user", JSON.stringify(user));
+    navigate("/");
 
     if (password !== confirmPassword) {
       setMessage("Password not match");
-      retun;
+      return;
     }
     const registerEmail = localStorage.getItem("userEmail");
     if (email === registerEmail) {
       setMessage("Email already Register");
-      retun;
+      return;
     }
     localStorage.setItem("userName", name);
     localStorage.setItem("userEmail", email);
@@ -36,9 +36,6 @@ function Signup() {
     setMessage("account successfully created");
     navigate("/login");
   };
-
-
-
 
   return (
     <div className="signupPage">

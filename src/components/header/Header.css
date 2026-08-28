@@ -64,6 +64,35 @@ header .headerActions{
 header .headerActions span{
   cursor: pointer;
 }
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profileIcon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.userName {
+  font-weight: 600;
+  color: #333;
+}
+
+.logout {
+  border: none;
+  background: transparent;
+  color: red;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.logout:hover {
+  text-decoration: underline;
+}
 /* header .headerActions button{
   padding: 8px 14px;
   border-radius: 10px;

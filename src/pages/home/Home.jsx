@@ -42,7 +42,7 @@ const handleApply=()=>{
                 <p>Location</p>
               </div>
               <div className="action">
-                <button onClick={() => nav("/jobs")}>Find Job</button>
+                <button onClick={() => navigate("/jobs")}>Find Job</button>
               </div>
             </div>
           </div>

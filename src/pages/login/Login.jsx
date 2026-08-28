@@ -9,16 +9,9 @@ function Login() {
   const [status, setStatus] = useState("");
 
   const handleLogin = (e) => {
-    e.preventDefault();
-     const user={
-      name:"User name",
-      email:email,
-    };
-    localStorage.setItem("user",JSON.stringify(user));
-    navigate("/")
-
     const registerEmail = localStorage.getItem("userEmail");
     const registerPassowrd = localStorage.getItem("userPassword");
+    const registerName = localStorage.getItem("userName");
 
     if (email === registerEmail && password === registerPassowrd) {
       setMessage("Login Successful");
@@ -27,6 +20,15 @@ function Login() {
     } else {
       setMessage("Email Not Registered");
     }
+
+
+    const user = {
+      name: registerName,
+      email: registerEmail,
+    };
+    localStorage.setItem("user", JSON.stringify(user));
+    setMessage("Login Sucessful");
+    navigate("/");
   };
   return (
     <>
