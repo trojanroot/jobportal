@@ -8,7 +8,8 @@ function Layout() {
   const hideFooter =
     location.pathname === "/login" ||
     location.pathname === "/signup" ||
-    location.pathname === "/underconstruction";
+    location.pathname === "/underconstruction" ||
+    location.pathname === "/apply";
 
   return (
     <>

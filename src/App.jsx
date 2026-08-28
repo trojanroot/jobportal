@@ -7,6 +7,7 @@ import About from "./pages/aboutus/About";
 import CareerTip from "./pages/careertip/CareerTip";
 import Login from "./pages/login/Login";
 import Signup from "./pages/signup/Signup";
+import Apply from "./pages/apply/Apply";
 import UnderConstruction from "./pages/underConstruction/underConstruction";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/underconstruction" element={<UnderConstruction />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/apply" element={<Apply />} />
         </Route>
       </Routes>
     </>
