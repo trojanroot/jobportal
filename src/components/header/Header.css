@@ -166,7 +166,6 @@ header .headerActions .signup{
 }
 
 
-/* Small Mobile */
 @media (max-width: 480px) {
 
   header {
@@ -190,7 +189,6 @@ header .headerActions .signup{
     gap: 0.5rem;
   }
 
-  /* Make icons slightly smaller */
   header .headerActions svg {
     width: 22px;
     height: 22px;

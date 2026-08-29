@@ -187,7 +187,6 @@ section{
     padding: 1.5rem;
   }
 
-  /* Hero */
 
   .mainItem {
     position: relative;
@@ -215,7 +214,6 @@ section{
   }
 
 
-  /* Search */
 
   .mainSearch {
     width: 90%;
@@ -254,7 +252,6 @@ section{
   }
 
 
-  /* Popular Vacancies */
 
   .Mvacancies h3 {
     font-size: 32px;
@@ -278,7 +275,6 @@ section{
   }
 
 
-  /* Featured Jobs */
 
   .featureJobs h3 {
     font-size: 32px;
@@ -331,9 +327,6 @@ section{
   .container {
     padding-inline: 0.5rem;
   }
-
-
-  /* Hero */
 
   .mainItem img {
     width: 100%;
@@ -430,7 +423,6 @@ section{
   }
 
 
-  /* Featured Jobs */
 
   .featureJobs {
     padding: 10px;

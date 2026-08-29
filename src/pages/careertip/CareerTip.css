@@ -60,7 +60,6 @@
 }
 
 
-/* Career Tips */
 
 .careerTips {
     padding: 70px 20px;
@@ -133,7 +132,6 @@
 }
 
 
-/* Resume */
 
 .resumeSection {
     padding: 70px 20px;
@@ -161,10 +159,6 @@
     color: #000;
     line-height: 1.7;
 }
-
-
-/* Interview */
-
 .interviewSection {
     margin: 40px 0px;
     padding: 70px 20px;
@@ -205,7 +199,7 @@
 }
 
 
-/* Responsive */
+
 
 @media (max-width: 768px) {
 

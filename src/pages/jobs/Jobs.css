@@ -32,7 +32,6 @@
 }
 
 
-/* Mobile */
 @media (max-width: 480px) {
   .cardItems {
     grid-template-columns: 1fr;
