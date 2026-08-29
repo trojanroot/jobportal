@@ -1,0 +1,228 @@
+.careerPage {
+    background: #fff; 
+}
+
+.careerHero {
+    min-height: 430px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    padding: 60px 70px;
+    border-radius: 20px;
+    background-color: rgb(199, 235, 249);
+    position: relative;
+    overflow: hidden;
+}
+
+.careerHeroContent {
+    display: flex;
+    align-items: center;
+    padding: 70px 20px;
+}
+
+.careerHeroText {
+    max-width: 650px; 
+}
+
+.careerHeroText span,
+.resumeContent span {
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.careerHeroText h1 {
+    font-size: 48px;
+    line-height: 1.15;
+    margin: 15px 0;
+    color: var(--primary-color);
+}
+
+.careerHeroText p {
+    max-width: 580px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #000;
+}
+
+.careerHeroText button,
+.resumeContent button {
+    margin-top: 15px;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 8px;
+    background: var(--primary-color);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* Career Tips */
+
+.careerTips {
+    padding: 70px 20px;
+}
+
+.careerHeading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.careerHeading h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.careerHeading p {
+    color: #000;
+    font-size: 17px;
+}
+
+.tipsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.tipCard {
+    padding: 28px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    /* background: white; */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+
+.tipCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.tipIcon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.tipCard h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.tipCard p {
+    color: #000;
+    line-height: 1.6;
+}
+
+.tipCard button {
+    margin-top: 10px;
+    border: none;
+    background: none;
+    color: var(--primary-color);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* Resume */
+
+.resumeSection {
+    padding: 70px 20px;
+}
+
+.resumeContent {
+    background-color: rgb(199, 235, 249);
+    border-radius: 20px;
+    padding: 60px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.resumeContent h2 {
+    color: var(--primary-color);
+    max-width: 500px;
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 15px 0;
+}
+
+.resumeContent p {
+    max-width: 550px;
+
+    color: #000;
+    line-height: 1.7;
+}
+
+
+/* Interview */
+
+.interviewSection {
+    margin: 40px 0px;
+    padding: 70px 20px;
+    background-color: rgb(199, 235, 249);
+}
+
+.interviewSection h2 {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 40px;
+}
+
+.interviewTips {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.interviewTips > div {
+    background: white;
+    padding: 30px;
+
+    border-radius: 12px;
+}
+
+.interviewTips strong {
+    font-size: 28px;
+    color: var(--primary-color);
+}
+
+.interviewTips h3 {
+    margin: 12px 0;
+}
+
+.interviewTips p {
+    color: #000;
+    line-height: 1.6;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .careerHeroText h1 {
+    font-size: 36px;
+  }
+
+  .tipsGrid,
+  .interviewTips {
+    grid-template-columns: 1fr;
+  }
+
+  .resumeContent {
+    padding: 35px 25px;
+  }
+
+  .careerHeading h2 {
+    font-size: 28px;
+  }
+}
