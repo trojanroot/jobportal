@@ -27,3 +27,47 @@
     transition: 0.3s;
 
 }
+
+@media (max-width: 768px) {
+
+  .companiesHeading {
+    padding: 35px 20px;
+  }
+
+  .companiesHeading h2 {
+    font-size: 32px;
+  }
+
+  .coCards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .companiesCard {
+    padding: 25px;
+    gap: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .companiesHeading {
+    padding: 30px 15px;
+  }
+
+  .companiesHeading h2 {
+    font-size: 26px;
+  }
+
+  .coCards {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 15px;
+  }
+
+  .companiesCard {
+    padding: 25px 20px;
+    gap: 15px;
+  }
+}

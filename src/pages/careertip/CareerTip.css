@@ -226,3 +226,56 @@
     font-size: 28px;
   }
 }
+
+@media (max-width: 480px) {
+
+    .careerHero {
+        padding: 30px 18px;
+    }
+
+    .careerHeroText h1 {
+        font-size: 28px;
+    }
+
+    .careerHeroText p {
+        font-size: 14px;
+    }
+
+    .careerTips,
+    .resumeSection {
+        padding: 40px 12px;
+    }
+
+    .careerHeading h2,
+    .interviewSection h2 {
+        font-size: 25px;
+    }
+
+    .careerHeading p {
+        font-size: 14px;
+    }
+
+    .tipCard {
+        padding: 22px 18px;
+    }
+
+    .resumeContent {
+        padding: 35px 20px;
+    }
+
+    .resumeContent h2 {
+        font-size: 25px;
+    }
+
+    .resumeContent p {
+        font-size: 14px;
+    }
+
+    .interviewSection {
+        padding: 40px 12px;
+    }
+
+    .interviewTips > div {
+        padding: 22px 18px;
+    }
+}

@@ -258,30 +258,7 @@
   transform: translateY(-2px);
 }
 
-/* @media (max-width: 1000px) {
 
-  .serviceCards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .aboutHeroText {
-    width: 80%;
-  }
-
-  .aboutHeroText h1 {
-    font-size: 40px;
-  }
-
-  .stats {
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 30px;
-  }
-
-  .stats div {
-    border-right: none;
-  }
-}
 
 
 @media (max-width: 768px) {
@@ -367,4 +344,5 @@
   .aboutCTA h2 {
     font-size: 26px;
   }
-} */
+} 
+

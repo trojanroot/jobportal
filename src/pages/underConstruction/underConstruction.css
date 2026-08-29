@@ -1,36 +1,113 @@
-.construction{
+.construction {
     min-height: 70vh;
-
     display: flex;
     align-items: center;
     padding: 30px 20px;
 }
-.containerHeading{
+
+.containerHeading {
     flex: 1;
 }
-.containerHeading h1{
+
+.containerHeading h1 {
     color: var(--primary-color);
     font-size: 45px;
     line-height: 1.2;
     margin-bottom: 20px;
-
 }
 
 .containerHeading p {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #777;
-  margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #777;
+    margin-bottom: 30px;
 }
 
-.containerHeading button{
+.containerHeading button {
     background-color: var(--primary-color);
     color: #fff;
     padding: 8px 16px;
     border-radius: 14px;
     font-size: 18px;
+    border: none;
+    cursor: pointer;
 }
-h3{
-    color: var(--primary-color);
 
+h3 {
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+
+    .construction {
+        min-height: 60vh;
+        padding: 40px 30px;
+    }
+
+    .containerHeading {
+        width: 100%;
+    }
+
+    .containerHeading h1 {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+
+    .containerHeading p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    .containerHeading button {
+        font-size: 16px;
+        padding: 10px 18px;
+    }
+    .socialMedia{
+        display: flex;
+        flex-direction: column;
+    }
+    .containerImg img {
+        max-width: 390px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .construction {
+        min-height: 70vh;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .containerHeading {
+        width: 100%;
+    }
+
+    .containerHeading h1 {
+        font-size: 29px;
+        line-height: 1.25;
+        margin-bottom: 15px;
+    }
+
+    .containerHeading p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    .containerHeading button {
+        width: 100%;
+        max-width: 220px;
+        font-size: 15px;
+        padding: 11px 18px;
+        border-radius: 10px;
+    }
+    .socialMedia{
+        display: flex;
+        flex-direction: column;
+    }
+    .containerImg img {
+        max-width: 280px;
+    }
 }

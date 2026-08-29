@@ -99,3 +99,96 @@
     padding: 20px;
 }
 
+@media (max-width: 768px) {
+
+    .footer {
+        padding: 30px 20px;
+    }
+
+    .footerContain {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px 20px;
+        padding: 30px 10px;
+    }
+
+    .footerHeading {
+        grid-column: 1 / -1;
+    }
+
+    .footerHeading h2 {
+        font-size: 30px;
+    }
+
+    .footerHeading img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .footerquickLinks,
+    .candidate,
+    .employes,
+    .support {
+        gap: 0.4rem;
+    }
+
+    .footerquickLinks h2,
+    .candidate h2,
+    .employes h2,
+    .support h2 {
+        font-size: 20px;
+    }
+
+    .footerquickLinks a,
+    .candidate a,
+    .employes a,
+    .support a {
+        font-size: 14px;
+    }
+
+    .socialMedia img {
+        width: 26px;
+        height: 26px;
+    }
+
+    .footerend {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        padding: 20px 10px;
+    }
+}
+@media (max-width: 480px) {
+
+    .footerContain {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footerHeading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerHeading .fHead {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .socialMedia {
+        justify-content: center;
+    }
+
+    .footerquickLinks,
+    .candidate,
+    .employes,
+    .support {
+        justify-items: center;
+    }
+
+    .footerend {
+        font-size: 13px;
+    }
+}

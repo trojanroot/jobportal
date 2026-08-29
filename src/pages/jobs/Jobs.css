@@ -20,3 +20,26 @@
     gap: 6rem;
 
 }
+@media (max-width: 768px) {
+  .cardItems {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .cards {
+    padding: 30px;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 480px) {
+  .cardItems {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .cards {
+    padding: 25px;
+  }
+}
