@@ -119,6 +119,49 @@ header .headerActions .signup{
 } */
 
 
+.desktopNav {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.desktopNav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.desktopNav a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.hamburger {
+  display: none;
+  width: 55px;
+  height: 55px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.hamburger span {
+  width: 18px;
+  height: 2px;
+  background-color: #000;
+  display: block;
+}
+
+
+.mobileNav {
+  display: none;
+}
 
 @media (max-width: 768px) {
 
@@ -150,6 +193,58 @@ header .headerActions .signup{
   header .headerActions > span {
     display: flex;
     align-items: center;
+  }
+  .desktopNav {
+    display: none;
+  }
+
+
+  .hamburger {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .mobileNav {
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 15px 0;
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+
+    transform: translateY(-10px);
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.3s;
+  }
+
+  .mobileNav.showMenu {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .mobileNav a {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 15px 25px;
+    font-weight: 500;
+    border-bottom: 1px solid #eee;
+  }
+
+  .mobileNav a:hover {
+    color: var(--primary-color);
+    background-color: #f5f7ff;
   }
 
   .profile {
@@ -194,6 +289,15 @@ header .headerActions .signup{
     height: 22px;
   }
   
+    .hamburger {
+    width: 50px;
+    height: 50px;
+  }
+
+  .hamburger span {
+    width: 18px;
+    height: 2px;
+  }
 
   .userName {
     font-size: 13px;

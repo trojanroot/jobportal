@@ -12,6 +12,10 @@ function Header() {
     setUser(null);
     navigate("/");
   };
+  const [menuOpen, setMenuOpen] = useState(false);
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
   return (
     <>
       <header>
@@ -27,6 +31,18 @@ function Header() {
               <Link to="/companies">Companies</Link>
               <Link to="/about">AboutUS</Link>
               <Link to="/careertip">Career Tips</Link>
+            </nav>
+            <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)} > 
+              <span></span>
+               <span></span> 
+               <span></span> 
+            </button> {/* Mobile Navigation */} 
+            <nav className={`mobileNav ${menuOpen ? "showMenu" : ""}`}>
+              <Link to="/" onClick={closeMenu}>Home</Link>
+              <Link to="/jobs" onClick={closeMenu}>Find Jobs</Link>
+              <Link to="/companies" onClick={closeMenu}>Companies</Link> 
+              <Link to="/about" onClick={closeMenu}>AboutUS</Link> 
+              <Link to="/careertip" onClick={closeMenu}>Career Tips</Link> 
             </nav>
             <div className="headerActions">
               <span>
